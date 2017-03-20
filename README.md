@@ -376,3 +376,180 @@ I added heroku-redis:
 Soon an app to enable agile teams to do planning poker estimations remotely
 
 --------------------------------------------------------------------------------
+ x) Heroku logs at this point: (in addition to logs above)
+ 2017-03-20T01:24:10.437638+00:00 app[api]: Release v6 created by user heroku-redis@addons.heroku.com
+ 2017-03-20T01:24:10.437638+00:00 app[api]: @ref:redis-encircled-41258 completed provisioning, setting REDIS_URL. by user heroku-redis@addons.her
+ oku.com
+ 2017-03-20T01:24:10.810508+00:00 heroku[web.1]: Restarting
+ 2017-03-20T01:24:10.810508+00:00 heroku[web.1]: State changed from up to starting
+ 2017-03-20T01:24:10.775985+00:00 app[api]: Release v6 created by user heroku-redis@addons.heroku.com
+ 2017-03-20T01:24:11.438613+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+ 2017-03-20T01:24:11.449376+00:00 app[web.1]: - Gracefully stopping, waiting for requests to finish
+
+ 2017-03-20T01:24:11.449514+00:00 app[web.1]: === puma shutdown: 2017-03-20 01:24:11 +0000 ===
+ 2017-03-20T01:24:11.449517+00:00 app[web.1]: - Goodbye!
+ 2017-03-20T01:24:12.062539+00:00 heroku[web.1]: Process exited with status 0
+ 2017-03-20T01:24:14.259941+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+ 2017-03-20T01:24:17.801983+00:00 app[web.1]: Puma starting in single mode...
+ 2017-03-20T01:24:17.802008+00:00 app[web.1]: * Version 3.8.1 (ruby 2.4.0-p0), codename: Sassy Salamander
+ 2017-03-20T01:24:17.802009+00:00 app[web.1]: * Min threads: 5, max threads: 5
+ 2017-03-20T01:24:17.802010+00:00 app[web.1]: * Environment: production
+ 2017-03-20T01:24:17.979540+00:00 app[web.1]: /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning:
+ constant ::Fixnum is deprecated
+ 2017-03-20T01:24:17.979542+00:00 app[web.1]: /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning:
+ constant ::Bignum is deprecated
+ 2017-03-20T01:24:18.948127+00:00 app[web.1]: /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/numeric/conversi
+ ons.rb:138: warning: constant ::Fixnum is deprecated
+ 2017-03-20T01:24:19.453883+00:00 app[web.1]: /app/vendor/bundle/ruby/2.4.0/gems/activejob-5.0.1/lib/active_job/arguments.rb:38: warning: constant ::Fixnum is deprecated
+ 2017-03-20T01:24:19.453889+00:00 app[web.1]: /app/vendor/bundle/ruby/2.4.0/gems/activejob-5.0.1/lib/active_job/arguments.rb:38: warning: constant ::Bignum is deprecated
+ 2017-03-20T01:24:20.049934+00:00 app[web.1]: * Listening on tcp://0.0.0.0:40777
+ 2017-03-20T01:24:20.050332+00:00 app[web.1]: Use Ctrl-C to stop
+ 2017-03-20T01:24:20.613451+00:00 heroku[web.1]: State changed from starting to up
+ 2017-03-20T01:26:22.953025+00:00 heroku[router]: at=info method=GET path="/" host=planning-poker-03-15-17.herokuapp.com request_id=b1442da2-7c47-46db-b6a8-72e79c139aea fwd="76.126.67.146" dyno=web.1 connect=1ms service=22ms status=200 bytes=3505 protocol=https
+ 2017-03-20T01:26:23.074843+00:00 heroku[router]: at=info method=GET path="/assets/application-639c48ce147da71d4bc018d4fa12c1fa70bdc45f2ba5610ccc37d640ec0874d8.css" host=planning-poker-03-15-17.herokuapp.com request_id=6bcc7f44-c32d-4ceb-a36b-4d133e2e08b4 fwd="76.126.67.146" dyno=web.1 connect=2ms service=3ms status=200 bytes=20534 protocol=https
+2017-03-20T01:26:22.953025+00:00 heroku[router]: at=info method=GET path="/" host=planning-poker-03-15-17.herokuapp.com request_id=b1442da2-7c47-46db-b6a8-72e79c139aea fwd="76.126.67.146" dyno=web.1 connect=1ms service=22ms status=200 bytes=3505 protocol=https
+2017-03-20T01:26:23.074843+00:00 heroku[router]: at=info method=GET path="/assets/application-639c48ce147da71d4bc018d4fa12c1fa70bdc45f2ba5610ccc
+37d640ec0874d8.css" host=planning-poker-03-15-17.herokuapp.com request_id=6bcc7f44-c32d-4ceb-a36b-4d133e2e08b4 fwd="76.126.67.146" dyno=web.1 co
+nnect=2ms service=3ms status=200 bytes=20534 protocol=https
+2017-03-20T01:26:22.937553+00:00 app[web.1]: I, [2017-03-20T01:26:22.937496 #4]  INFO -- : [b1442da2-7c47-46db-b6a8-72e79c139aea] Processing by
+StaticPagesController#home as HTML
+2017-03-20T01:26:22.945961+00:00 app[web.1]: I, [2017-03-20T01:26:22.945885 #4]  INFO -- : [b1442da2-7c47-46db-b6a8-72e79c139aea]   Rendering st
+atic_pages/home.html.erb within layouts/application
+2017-03-20T01:26:22.935425+00:00 app[web.1]: I, [2017-03-20T01:26:22.935336 #4]  INFO -- : [b1442da2-7c47-46db-b6a8-72e79c139aea] Started GET "/" for 76.126.67.146 at 2017-03-20 01:26:22 +0000
+2017-03-20T01:26:22.950060+00:00 app[web.1]: I, [2017-03-20T01:26:22.950000 #4]  INFO -- : [b1442da2-7c47-46db-b6a8-72e79c139aea]   Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+2017-03-20T01:26:22.952052+00:00 app[web.1]: I, [2017-03-20T01:26:22.951998 #4]  INFO -- : [b1442da2-7c47-46db-b6a8-72e79c139aea]   Rendered application_favicon.html.erb (0.7ms)
+2017-03-20T01:26:22.952943+00:00 app[web.1]: I, [2017-03-20T01:26:22.952889 #4]  INFO -- : [b1442da2-7c47-46db-b6a8-72e79c139aea] Completed 200
+OK in 15ms (Views: 8.1ms)
+ 2017-03-20T01:26:23.262995+00:00 heroku[router]: at=info method=GET path="/assets/favicon/favicon-b12fad534a1a1ba55a495512a28a7622712fdf19069e3d
+ ec760d2530b9148a35.ico" host=planning-poker-03-15-17.herokuapp.com request_id=73cb4ade-9801-4fd3-a8aa-42662350d202 fwd="76.126.67.146" dyno=web.
+ 1 connect=1ms service=3ms status=200 bytes=15233 protocol=https
+ 2017-03-20T01:26:23.292447+00:00 heroku[router]: at=info method=GET path="/assets/application-7d40e84856a3c064074f61065b8ab0fcbc5b3b20682d883880
+ 39197b39c61823.js" host=planning-poker-03-15-17.herokuapp.com request_id=e19505a7-e2fe-4c24-bf10-94dcedcce161 fwd="76.126.67.146" dyno=web.1 con
+ nect=0ms service=3ms status=200 bytes=70339 protocol=https
+
+ --------------------------------------------------------------------------------
+x) Init heroku app database:
+
+$ heroku run bash --app planning-poker-03-15-17
+Running bash on ⬢ planning-poker-03-15-17... up, run.6257 (Free)
+
+
+$ rake db:reset
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/numeric/conversions.rb:138: warning: constant ::Fixnum is dep
+recated
+FATAL:  permission denied for database "postgres"
+DETAIL:  User does not have CONNECT privilege.
+Couldn't drop database 'derveiugb9cp6e'
+rake aborted!
+PG::ConnectionBad: FATAL:  permission denied for database "postgres"
+DETAIL:  User does not have CONNECT privilege.
+
+$ rake db:migrate
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/numeric/conversions.rb:138: warning: constant ::Fixnum is dep
+recated
+D, [2017-03-20T01:48:08.171945 #7] DEBUG -- :    (12.9ms)  CREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)
+D, [2017-03-20T01:48:08.185898 #7] DEBUG -- :    (7.1ms)  CREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" char
+
+acter varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)
+D, [2017-03-20T01:48:08.187333 #7] DEBUG -- :    (0.6ms)  SELECT pg_try_advisory_lock(6785411136490624470);
+D, [2017-03-20T01:48:08.196646 #7] DEBUG -- :   ActiveRecord::SchemaMigration Load (0.7ms)  SELECT "schema_migrations".* FROM "schema_migrations
+"
+I, [2017-03-20T01:48:08.201500 #7]  INFO -- : Migrating to CreateTeams (20160723065527)
+D, [2017-03-20T01:48:08.203171 #7] DEBUG -- :    (0.4ms)  BEGIN
+== 20160723065527 CreateTeams: migrating ======================================
+-- create_table(:teams)
+D, [2017-03-20T01:48:08.210490 #7] DEBUG -- :    (6.8ms)  CREATE TABLE "teams" ("id" serial primary key, "name" text, "created_at" timestamp NOT
+ NULL, "updated_at" timestamp NOT NULL)
+   -> 0.0072s
+== 20160723065527 CreateTeams: migrated (0.0073s) =============================
+
+D, [2017-03-20T01:48:08.215370 #7] DEBUG -- :   SQL (0.6ms)  INSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"  [["ver
+sion", "20160723065527"]]
+D, [2017-03-20T01:48:08.217823 #7] DEBUG -- :    (2.2ms)  COMMIT
+I, [2017-03-20T01:48:08.217911 #7]  INFO -- : Migrating to CreateTeamMembers (20160723070435)
+D, [2017-03-20T01:48:08.218710 #7] DEBUG -- :    (0.5ms)  BEGIN
+== 20160723070435 CreateTeamMembers: migrating ================================
+-- create_table(:team_members)
+D, [2017-03-20T01:48:08.225071 #7] DEBUG -- :    (5.9ms)  CREATE TABLE "team_members" ("id" serial primary key, "name" text, "team_id" integer,
+"created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)
+   -> 0.0063s
+   == 20170119220052 AddAnimatorRefToTeam: migrating =============================
+   -- add_column(:teams, :animator_id, :integer)
+   D, [2017-03-20T01:48:08.230191 #7] DEBUG -- :    (0.7ms)  ALTER TABLE "teams" ADD "animator_id" integer
+      -> 0.0009s
+   -- add_foreign_key(:teams, :team_members, {:column=>:animator_id})
+   D, [2017-03-20T01:48:08.233905 #7] DEBUG -- :    (3.4ms)  ALTER TABLE "teams" ADD CONSTRAINT "fk_rails_9fa349acc1"
+   FOREIGN KEY ("animator_id")
+     REFERENCES "team_members" ("id")
+
+      -> 0.0037s
+   == 20170119220052 AddAnimatorRefToTeam: migrated (0.0047s) ====================
+
+
+   D, [2017-03-20T01:48:08.235180 #7] DEBUG -- :   SQL (0.7ms)  INSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"  [["ver
+   sion", "20170119220052"]]
+   D, [2017-03-20T01:48:08.236983 #7] DEBUG -- :    (1.6ms)  COMMIT
+   I, [2017-03-20T01:48:08.237078 #7]  INFO -- : Migrating to AddLockVersionToTeam (20170124080251)
+   D, [2017-03-20T01:48:08.237922 #7] DEBUG -- :    (0.5ms)  BEGIN
+   == 20170124080251 AddLockVersionToTeam: migrating =============================
+   -- add_column(:teams, :lock_version, :integer)
+   D, [2017-03-20T01:48:08.239578 #7] DEBUG -- :    (1.1ms)  ALTER TABLE "teams" ADD "lock_version" integer
+      -> 0.0015s
+   == 20170124080251 AddLockVersionToTeam: migrated (0.0016s) ====================
+
+   D, [2017-03-20T01:48:08.240859 #7] DEBUG -- :   SQL (0.6ms)  INSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"  [["ver
+   sion", "20170124080251"]]
+   D, [2017-03-20T01:48:08.250695 #7] DEBUG -- :    (9.6ms)  COMMIT
+   D, [2017-03-20T01:48:08.256033 #7] DEBUG -- :   ActiveRecord::InternalMetadata Load (0.9ms)  SELECT  "ar_internal_metadata".* FROM "ar_internal_
+   metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2  [["key", :environment], ["LIMIT", 1]]
+   D, [2017-03-20T01:48:08.261633 #7] DEBUG -- :    (0.5ms)  BEGIN
+   D, [2017-03-20T01:48:08.263477 #7] DEBUG -- :   SQL (0.8ms)  INSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VAL
+   UES ($1, $2, $3, $4) RETURNING "key"  [["key", "environment"], ["value", "production"], ["created_at", 2017-03-20 01:48:08 UTC], ["updated_at",
+   2017-03-20 01:48:08 UTC]]
+   D, [2017-03-20T01:48:08.265311 #7] DEBUG -- :    (1.6ms)  COMMIT
+   D, [2017-03-20T01:48:08.266063 #7] DEBUG -- :    (0.6ms)  SELECT pg_advisory_unlock(6785411136490624470)
+
+
+db reset via heroku cli:
+$ heroku run rake db:reset --app planning-poker-03-15-17
+Running rake db:reset on ⬢ planning-poker-03-15-17... up, run.4272 (Free)
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
+
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/numeric/conversions.rb:138: warning: constant ::Fixnum is dep
+recated
+D, [2017-03-20T02:34:49.556845 #4] DEBUG -- :   ActiveRecord::SchemaMigration Load (1.5ms)  SELECT "schema_migrations".* FROM "schema_migrations
+"
+D, [2017-03-20T02:34:49.575941 #4] DEBUG -- :    (1.1ms)  SELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_m
+etadata"."key" = $1  [["key", :environment]]
+D, [2017-03-20T02:34:49.578412 #4] DEBUG -- :   ActiveRecord::SchemaMigration Load (0.9ms)  SELECT "schema_migrations".* FROM "schema_migrations
+"
+D, [2017-03-20T02:34:49.581435 #4] DEBUG -- :    (1.0ms)  SELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_m
+etadata"."key" = $1  [["key", :environment]]
+D, [2017-03-20T02:34:49.583952 #4] DEBUG -- :   ActiveRecord::SchemaMigration Load (1.0ms)  SELECT "schema_migrations".* FROM "schema_migrations
+"
+D, [2017-03-20T02:34:49.586614 #4] DEBUG -- :    (0.9ms)  SELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_m
+etadata"."key" = $1  [["key", :environment]]
+rake aborted!
+ActiveRecord::ProtectedEnvironmentError: You are attempting to run a destructive action against your 'production' database.
+If you are sure you want to continue, run the same command with the environment variable:
+DISABLE_DATABASE_ENVIRONMENT_CHECK=1
+
+$ heroku run rake db:migrate --app planning-poker-03-15-17
+Running rake db:migrate on ⬢ planning-poker-03-15-17... up, run.6945 (Free)
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
+/app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/numeric/conversions.rb:138: warning: constant ::Fixnum is dep
+recated
+D, [2017-03-20T02:35:15.881129 #4] DEBUG -- :    (1.0ms)  SELECT pg_try_advisory_lock(6785411136490624470);
+D, [2017-03-20T02:35:15.897444 #4] DEBUG -- :   ActiveRecord::SchemaMigration Load (0.8ms)  SELECT "schema_migrations".* FROM "schema_migrations
+"
+D, [2017-03-20T02:35:15.918159 #4] DEBUG -- :   ActiveRecord::InternalMetadata Load (1.1ms)  SELECT  "ar_internal_metadata".* FROM "ar_internal_
+metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2  [["key", :environment], ["LIMIT", 1]]
+D, [2017-03-20T02:35:15.927309 #4] DEBUG -- :    (0.9ms)  BEGIN
+D, [2017-03-20T02:35:15.930104 #4] DEBUG -- :    (0.6ms)  COMMIT
+D, [2017-03-20T02:35:15.931116 #4] DEBUG -- :    (0.6ms)  SELECT pg_advisory_unlock(6785411136490624470)
